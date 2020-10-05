@@ -8,31 +8,31 @@ These are additional workflows that we use with [phyluce](https://github.com/fai
 
 1. Check out the code somewhere
 
-        ```bash
-        git clone https://github.com/faircloth-lab/phyluce-workflows
-        ```
+    ```bash
+    git clone https://github.com/faircloth-lab/phyluce-workflows
+    ```
 
 2. Navigate too that location and install dependencies from conda environment
 
-        ```bash
-        cd <path to wherever you cloned>
-        conda env create -f environment.yml
-        ```
+    ```bash
+    cd <path to wherever you cloned>
+    conda env create -f environment.yml
+    ```
 
 3. Activate conda environment
 
-        ```bash
-        conda activate phyluce-workflows
-        ```
+    ```bash
+    conda activate phyluce-workflows
+    ```
 
 4. Navigate to directory that contains the workflow you want to run, edit config file appropriately, and run snakemake:
         
-        ```bash
-        cd mapping
-        # <edit config file or run using example>
-        # change cores to suite your system
-        snakemake --cores 1
-        ```
+    ```bash
+    cd mapping
+    # <edit config file or run using example>
+    # change cores to suite your system
+    snakemake --cores 1
+    ```
 
 ## Workflows
 
