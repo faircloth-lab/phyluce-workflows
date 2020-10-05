@@ -1,0 +1,11 @@
+reads:
+    alligator-mississippiensis: ../../Git/phyluce/phyluce/tests/test-expected/raw-reads/alligator-mississippiensis/
+    gallus-gallus: ../../Git/phyluce/phyluce/tests/test-expected/raw-reads/gallus-gallus
+    peromyscus-maniculatus: ../../Git/phyluce/phyluce/tests/test-expected/raw-reads/peromyscus-maniculatus
+    rana-sphenocephafa: ../../Git/phyluce/phyluce/tests/test-expected/raw-reads/rana-sphenocephafa
+
+contigs:
+    alligator-mississippiensis: ../../Git/phyluce/phyluce/tests/test-expected/spades/contigs/alligator_mississippiensis.contigs.fasta
+    gallus-gallus: ../../Git/phyluce/phyluce/tests/test-expected/spades/contigs/gallus_gallus.contigs.fasta
+    peromyscus-maniculatus: ../../Git/phyluce/phyluce/tests/test-expected/spades/contigs/peromyscus_maniculatus.contigs.fasta
+    rana-sphenocephafa: ../../Git/phyluce/phyluce/tests/test-expected/spades/contigs/rana_sphenocephafa.contigs.fasta
