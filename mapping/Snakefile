@@ -1,4 +1,25 @@
-import pdb
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+"""
+(c) 2020 Brant Faircloth || http://faircloth-lab.org/
+
+All rights reserved.
+
+This code is distributed under a 3-clause BSD license. Please see
+LICENSE.txt for more information.
+
+Created on 05 October 2020 11:29 CDT (-0500)
+
+DESCRIPTION
+
+Workflow uses samtools utilities to align raw reads to contigs, mark
+duplicates, and compute coverage on a taxon-by-taxon basis with
+pandas. Output written to `coverage` folder and duplicate-marked BAM
+files are retained (these can be input to `contig-correct`).
+"""
+
+#import pdb
 
 configfile: "config.yaml"
 
