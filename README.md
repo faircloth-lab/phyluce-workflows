@@ -12,7 +12,7 @@ These are additional workflows that we use with [phyluce](https://github.com/fai
     git clone https://github.com/faircloth-lab/phyluce-workflows
     ```
 
-2. Navigate too that location and install dependencies from conda environment
+2. Navigate to that location and install dependencies from conda environment
 
     ```bash
     cd <path to wherever you cloned>
@@ -34,8 +34,12 @@ These are additional workflows that we use with [phyluce](https://github.com/fai
     snakemake --cores 1
     ```
 
+5. Right now, the remaining workflows are built off of the `mapping` workflow, meaning that you need to run it first, regardless of other things that you run.
+
 ## Workflows
 
 * **Mapping**: Map raw reads to species specific contigs.  Uses `bwa`, `samtools`, `pandas`, and a custom script to map reads, perform duplicate detection and marking, and compute coverage across contigs by a few metrics.
 
 * **Contig-correction**: Using pre-existing BAM files (perhaps from `Mapping`), use `bcftools` and depth of coverage information to call SNPs in contigs, remove bad calls, and output consensus of results.  BAM files may also have been run through [mapDamage](https://ginolhac.github.io/mapDamage/).  Filters for removal are `--IndelGap 5 --SnpGap 5 --exclude 'QUAL<20 | DP<5 | AN>2'`, and sequences that are reduced to `< 50 bp` after filtering.
+
+* **Phasing**: Using pre-existing BAM files (perhaps from `Mapping`), use `samtools` to phase SNPs.  This actually phases the SNPs using samtools, produces `0.BAM` and `1.BAM` files for each haplotype, then converts those to FASTA data representing each haplotype using [pilon](https://github.com/broadinstitute/pilon/wiki).  Probably still needs a little work to deal with low coverage FASTAs that are produced. 
