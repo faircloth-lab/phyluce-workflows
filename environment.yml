@@ -13,8 +13,8 @@ dependencies:
   - brotlipy=0.7.0=py38haf1e3a3_1000
   - bwa=0.7.17=h2573ce8_7
   - bzip2=1.0.8=h1de35cc_0
-  - ca-certificates=2020.7.22=0
-  - certifi=2020.6.20=py38_0
+  - ca-certificates=2020.10.14=0
+  - certifi=2020.11.8=py38hecd8cb5_0
   - cffi=1.14.3=py38hed5b41f_0
   - chardet=3.0.4=py38_1003
   - coincbc=2.10.5=h186aa8c_0
@@ -49,9 +49,11 @@ dependencies:
   - nbformat=5.0.7=py_0
   - ncurses=6.2=h0a44026_1
   - numpy=1.19.1=py38h8ccc501_2
+  - openjdk=11.0.6=h7bc2e8c_1
   - openssl=1.1.1h=haf1e3a3_0
   - pandas=1.1.2=py38hb1e8313_0
   - perl=5.26.2=h4e221da_0
+  - pilon=1.23=2
   - pip=20.2.3=py38_0
   - psutil=5.7.2=py38haf1e3a3_0
   - pulp=2.3=py38h32f6830_1
@@ -85,4 +87,3 @@ dependencies:
   - zipp=3.1.0=py_0
   - zlib=1.2.11=h1de35cc_3
 prefix: /Users/bcf/miniconda3/envs/phyluce-workflows
-
