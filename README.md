@@ -30,7 +30,7 @@ These are additional workflows that we use with [phyluce](https://github.com/fai
     ```bash
     cd mapping
     # <edit config file or run using example>
-    # change cores to suite your system
+    # change cores to suit your system
     snakemake --cores 1
     ```
 
